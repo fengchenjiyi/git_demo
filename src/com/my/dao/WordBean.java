@@ -1,5 +1,10 @@
 package com.my.dao;
 
+/**
+ * 单词 Bean
+ * @author Administrator
+ *
+ */
 public class WordBean{
 	
 	private String index;
@@ -7,6 +12,7 @@ public class WordBean{
 	private String chName;
 	private String soundmark;
 	private String remark;
+	private String dateTime;
 	private int count;    // 用来搜索过程中记录匹配次数
 	
 	public String getIndex() {
@@ -38,6 +44,13 @@ public class WordBean{
 	}
 	public void setRemark(String remark) {
 		this.remark = remark;
+	}
+	
+	public String getDateTime() {
+		return dateTime;
+	}
+	public void setDateTime(String dateTime) {
+		this.dateTime = dateTime;
 	}
 	public int getCount() {
 		return count;
